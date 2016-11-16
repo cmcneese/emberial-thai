@@ -40,6 +40,14 @@ $m-container: 70rem;
 
   &__item {
     padding: 0.5rem;
-    border-bottom: 1rem $c-dark-gray solid;
+    margin: none;
+
+    & + & {
+      border-top: 0.1rem $c-dark-gray solid;
+    }
   }
+}
+
+h2 {
+  border-bottom: 0.1rem $c-dark-gray solid;
 }
