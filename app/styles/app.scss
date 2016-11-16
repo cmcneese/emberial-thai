@@ -13,6 +13,7 @@ $m-container: 70rem;
 @import "reset";
 @import "stickey-footer";
 @import "nav-bar";
+@import "layout";
 
 .hero {
   min-height: 10rem;
@@ -24,30 +25,21 @@ $m-container: 70rem;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
-.container {
-  max-width: $m-container;
-  margin: 0 auto;
-}
+.card {
+  box-shadow: 0.2rem 0.2rem 0.4rem black;
+  margin-bottom: 1rem;
+  background: white;
 
-.grid {
-  display: flex;
-  margin: -$m-gutter;
-  flex-wrap: wrap;
+  &__heading {
+    background: $c-primary;
+    padding: 0.5rem;
+    color: white;
+  }
 
   &__item {
-    flex-basis: calc(50% - 1rem - 1rem);
-    margin: $m-gutter;
-    flex-grow: 1;
-
-    &--menu {
-      flex-basis: calc(75% - 1rem - 1rem);
-    }
-
-    &--order {
-      flex-basis: calc(25% - 1rem - 1rem);
-    }
+    padding: 0.5rem;
+    border-bottom: 1rem $c-dark-gray solid;
   }
 }
