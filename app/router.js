@@ -7,7 +7,17 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('admin');
+  this.route('admin', function() {
+    this.route('category', function() {
+      this.route('new');
+      this.route('detail', {path: '/:id'});
+      this.route('new-item', {path: '/:id/new-item'});
+    });
+
+    this.route('item', function() {
+      this.route('edit', {path: '/:menu-item_id'});
+    });
+  });
 });
 
 export default Router;

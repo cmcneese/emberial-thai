@@ -1,1 +1,13 @@
-{{outlet}}
+<div class="gutter">
+  <div class="container">
+    <div class="button">
+      {{#link-to 'admin.category.index' class="row__item"}}
+        category
+      {{/link-to}}
+    </div>
+    {{outlet}}
+  </div>
+</div>
+
+
+      {{!-- <button {{action 'categories'}}>Categories</button> --}}
