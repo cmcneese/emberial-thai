@@ -24,3 +24,21 @@
     padding: 0.5rem;
   }
 }
+
+.app {
+  // min-height: 100vh;
+  // display: flex;
+  // flex-direction: column;
+
+  &__nav {
+    padding: 1rem;
+    background: $c-primary;
+    color: $c-gray;
+  }
+
+  // &__grow {
+  //   padding: 1rem;
+  //   flex-grow: 1;
+  // }
+
+}

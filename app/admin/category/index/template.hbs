@@ -1,5 +1,5 @@
 <div class="grid">
-  <h2 class="grid__title">menus</h2>
+  <h2 class="grid__title">Menus</h2>
     <div class="card card--fullwidth">
       <div class="row">
         {{#link-to 'admin.category.new' class="row__item"}}
@@ -8,14 +8,14 @@
       </div>
       <div class="table">
         <div class="thead">
-          <p>name</p>
+          <p>Name</p>
         </div>
         {{#each model as |category|}}
         <div class="tbody">
           <div class="row row-table">
             <p>{{category.name}}</p>
             {{#link-to 'admin.category.detail' category.id}}
-              details
+              Details
             {{/link-to}}
           </div>
         </div>
