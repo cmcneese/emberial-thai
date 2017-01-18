@@ -1,13 +1,13 @@
 <div class="grid">
   <div class="card card--fullwidth">
     <h2 class="card__header">New Category</h2>
-    {{#simple-form onsubmit=(action "submitForm") as |formValues|}}
+    {{#simple-form  as |formValues|}}
       <div class="card__content--top">
-        <p>name</p>
+        <p>Name</p>
         {{input value=formValues.name}}
       </div>
       <div class="card__content--bottom admin">
-        {{#link-to 'admin.category.index'}}
+        {{#link-to 'admin.category.index' class="button"}}
           back
         {{/link-to}}
         <button class="button is-success">submit</button>
