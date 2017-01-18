@@ -1,16 +1,18 @@
 <div class="grid">
   <h2 class="grid__title">Menus</h2>
-    <div class="card card--fullwidth">
-      <div class="row">
-        {{#link-to 'admin.category.new' class="row__item"}}
-          New category
-        {{/link-to}}
+</div>
+<div class="grid">
+  <div class="card card--fullwidth">
+    <div class="row">
+      {{#link-to 'admin.category.new' class="row__item" }}
+        New category
+      {{/link-to}}
+    </div>
+    <div class="table">
+      <div class="thead">
+        <p>Name</p>
       </div>
-      <div class="table">
-        <div class="thead">
-          <p>Name</p>
-        </div>
-        {{#each model as |category|}}
+      {{#each model as |category|}}
         <div class="tbody">
           <div class="row row-table">
             <p>{{category.name}}</p>
@@ -19,7 +21,7 @@
             {{/link-to}}
           </div>
         </div>
-        {{/each}}
-      </div>
+      {{/each}}
     </div>
+  </div>
 </div>

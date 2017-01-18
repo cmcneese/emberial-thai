@@ -61,6 +61,11 @@ $m-container: 70rem;
   margin-bottom: 1rem;
   background: white;
 
+  &--fullwidth {
+    width: 100%;
+    margin: 1rem;
+  }
+
   &-content {
     padding: 1rem;
     display: flex;
