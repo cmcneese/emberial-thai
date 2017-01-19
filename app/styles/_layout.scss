@@ -6,7 +6,7 @@
 
 .grid {
   display: flex;
-  margin: -$m-gutter;
+  margin: 0 (-$m-gutter);
   flex-wrap: wrap;
 
   &__item {

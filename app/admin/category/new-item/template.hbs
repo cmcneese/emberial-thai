@@ -1,10 +1,10 @@
 <div class="grid">
   <div class="card card--fullwidth">
     <h2 class="card__header">New Item</h2>
-    {{#simple-form onsubmit=(action "submitForm") as |item|}}
+    {{#simple-form as |item|}}
     <div class="card__content--top">
       <div class="input-container">
-        <p>name</p>
+        <p>Name</p>
         {{input value=item.name type="text" class="input-container__item"}}
         <p>price</p>
         <span class="flex">
