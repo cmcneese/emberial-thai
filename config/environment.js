@@ -1,9 +1,10 @@
 /* jshint node: true */
 
 module.exports = function(environment) {
-  const ENV = {
+  var ENV = {
+    apiUrl: 'https://emberial.herokuapp.com/menu-category',
     DS: {
-      host: 'emberial.herokuapp.com',
+      host: 'https://emberial.herokuapp.com/'
     },
     modulePrefix: 'emberial-thai',
     environment: environment,
