@@ -1,24 +1,26 @@
 <div class="grid">
-  <div class="card card--fullwidth">
-    <h2 class="card__header">New Item</h2>
-    {{#simple-form as |item|}}
-    <div class="card__content--top">
-      <div class="input-container">
-        <p>Name</p>
-        {{input value=item.name type="text" class="input-container__item"}}
-        <p>price</p>
-        <span class="flex">
-          <i class="fa fa-usd"></i>
-            {{input value=item.price type="text" class="input-container__item"}}
-        </span>
-        <p>description</p>
-        {{input value=item.description type="text" class="input-container__item"}}
-      </div>
+  <div class="grid__item">
+    <div class="card card--fullwidth">
+      <h2 class="card__header">New Item</h2>
+      {{#simple-form as |item|}}
+        <div class="card__content--top">
+          <div class="input-container">
+            <p>Name</p>
+            {{input value=item.name type="text" class="input-container__item"}}
+            <p>price</p>
+            <span class="flex">
+            <i class="fa fa-usd"></i>
+              {{input value=item.price type="text" class="input-container__item"}}
+          </span>
+            <p>description</p>
+            {{input value=item.description type="text" class="input-container__item"}}
+          </div>
+        </div>
+        <div class="card__content--bottom admin">
+          {{#link-to 'admin.category'}}back{{/link-to}}
+          <button class="button is-success">Submit</button>
+        </div>
+      {{/simple-form}}
     </div>
-    <div class="card__content--bottom admin">
-      {{#link-to 'admin.category'}}back{{/link-to}}
-      <button class="button is-success">Submit</button>
   </div>
-  {{/simple-form}}
-</div>
 </div>
