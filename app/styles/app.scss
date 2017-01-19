@@ -153,6 +153,17 @@ $m-container: 70rem;
     border-bottom: $c-dark-gray solid 0.1rem;
 
   }
+  &__body {
+    padding: 1rem;
+  }
+  &__total {
+    border-bottom: 0.1rem $c-black solid;
+    margin-bottom: 0.5rem;
+  }
+  &__status {
+    font-weight: bold;
+  }
+
 }
 
 .space-between {
@@ -162,4 +173,14 @@ $m-container: 70rem;
 
 .order__title {
   border-bottom: 0.1rem $c-black solid;
+}
+
+
+
+.order__button {
+  background: $c-success;
+  color: $c-white;
+  border: none;
+  width: 100%;
+  padding: 1rem;
 }
