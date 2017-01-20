@@ -2,7 +2,7 @@
   <div class="grid__item">
     <div class="card card--fullwidth">
       <h2 class="card__header">New Category</h2>
-      {{#simple-form  as |formValues|}}
+      {{#simple-form onsubmit=(action "saveForm") as |formValues|}}
         <div class="card__content--top">
           <p>Name</p>
           {{input value=formValues.name}}
