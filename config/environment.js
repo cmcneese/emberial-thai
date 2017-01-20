@@ -2,9 +2,8 @@
 
 module.exports = function(environment) {
   var ENV = {
-    apiUrl: 'https://emberial.herokuapp.com/menu-category',
     DS: {
-      host: 'https://emberial.herokuapp.com/'
+      host: 'https://emberial.herokuapp.com',
     },
     modulePrefix: 'emberial-thai',
     environment: environment,
