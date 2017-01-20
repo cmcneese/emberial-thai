@@ -2,7 +2,5 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   name: DS.attr('string'),
-  description: DS.attr('string'),
-  price: DS.attr('number'),
-  menuCategory: DS.belongsTo('menu-category')
+  menuItems: DS.hasMany('menu-item')
 });

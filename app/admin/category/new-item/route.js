@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model() {
-    this.store.findAll('new-item');
+  model(params) {
+    return this.store.findRecord('menu-category', params['menu-category_id']);
   },
 });

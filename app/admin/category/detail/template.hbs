@@ -4,7 +4,7 @@
       <div class="card card--fullwidth">
         <div class="row space-between">
           <button class="button is-danger" {{action "deleteItem"}}>Delete</button>
-          {{#link-to 'admin.category.new-item' model class="row__item"}}
+          {{#link-to 'admin.category.new-item' model.id class="row__item"}}
             New Menu Item
           {{/link-to}}
         </div>
@@ -13,14 +13,16 @@
             <p>Name</p>
           </div>
           <div class="tbody">
-            {{#each model.menuItems as |menuItem|}}
-            <div class="row row-table">
-              <p>{{menuItem.name}}</p>
-              {{#link-to 'admin.item.edit' menuItem}}
-                edit
-              {{/link-to}}
-            </div>
-            {{/each}}
+            <tbody>
+              {{#each model.menuItems as |menuItem|}}
+              <div class="row row-table">
+                <p>{{menuItem.name}}</p>
+                {{#link-to 'admin.item.edit' menuItem}}
+                  edit
+                {{/link-to}}
+              </div>
+              {{/each}}
+            </tbody>
           </div>
         </div>
       </div>

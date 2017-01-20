@@ -10,12 +10,12 @@ Router.map(function() {
   this.route('admin', function() {
     this.route('category', function() {
       this.route('new');
-      this.route('detail', {path: '/:id'});
-      this.route('new-item', {path: '/:id/new-item'});
+      this.route('detail', {path: '/:detail_id'});
+      this.route('new-item', {path: '/:menu-category_id/new-item'});
     });
 
     this.route('item', function() {
-      this.route('edit', {path: '/:menu-item_id'});
+      this.route('edit-item', {path: '/:menu-item_id/edit'});
     });
   });
 });
