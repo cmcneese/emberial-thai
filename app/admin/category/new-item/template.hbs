@@ -1,8 +1,8 @@
 <div class="grid">
   <div class="grid__item">
     <div class="card card--fullwidth">
+      {{#simple-form onsubmit=(action "saveItem") class="" as |item|}}
       <h2 class="card__header">New Item</h2>
-      {{#simple-form as |item|}}
         <div class="card__content--top">
           <div class="input-container">
             <p>Name</p>
