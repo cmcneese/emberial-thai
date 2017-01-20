@@ -23,7 +23,7 @@
                   <p>{{ value.description }}</p>
                 </div>
                 <div class="card__item-right">
-                  <p class="price">{{ value.price }}</p>
+                  <p class="price">${{ value.price }}</p>
                   <button type="button" name="button" class="order">Order</button>
                 </div>
               </li>
@@ -40,7 +40,7 @@
           <div class="cart__body">
             <p class="cart__status">Add Something</p>
             <p class="cart__message">Your cart is empty!</p>
-            <p class="cart__total">Total</p>
+            <p class="cart__total">Total $ {{value.price}}</p>
 
               <button class="order__button">Submit Order</button>
 
