@@ -3,8 +3,8 @@
   <div class="grid__item">
       <div class="card card--fullwidth">
         <div class="row space-between">
-          <button class="button is-danger" {{action "deleteItem"}}>Delete</button>
-          {{#link-to 'admin.category.new-item' model.id class="row__item"}}
+          <button class="button is-danger" {{action "destroyRecord" model}}>Delete</button>
+{{#link-to 'admin.category.new-item' model.id class="row__item"}}
             New Menu Item
           {{/link-to}}
         </div>
