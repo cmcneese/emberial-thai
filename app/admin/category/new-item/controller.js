@@ -2,12 +2,12 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
   actions: {
-    saveForm(formObject) {
-      if (formObject.name) {
-        const item = this.store.createRecord('menu-item', formObject);
-        item.set('menuCategory', this.model)
+    saveForm(formValues) {
+      if (formValues) {
+        const menuItem = this.store.createRecord('menu-item', formValues);
+        menuItem.set('menuCategory', this.model);
 
-        item.save()
+        menuItem.save()
           .then(() => {
             alert('Menu Item Saved!');
             this.transitionToRoute('/');
