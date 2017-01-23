@@ -20,8 +20,9 @@
                 <p>{{menuItem.price}}</p>
                 <p>{{menuItem.description}}</p>
                 {{#link-to 'admin.edit-item' menuItem}}
-                  edit
+                  Edit
                 {{/link-to}}
+                <a href="#" class="link" {{action "destroyRecord" x}}>Delete</a>
               </div>
               {{/each}}
             </tbody>
