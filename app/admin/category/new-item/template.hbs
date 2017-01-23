@@ -8,14 +8,14 @@
 
           <div class="input-container">
             <p>Name</p>
-            {{input value=item.name type="text" class="input-container__item"}}
+            {{input value=formValues.name type="text" class="input-container__item"}}
             <p>price</p>
             <span class="flex">
             <i class="fa fa-usd"></i>
-              {{input value=item.price type="text" class="input-container__item"}}
+              {{input value=formValues.price type="text" class="input-container__item"}}
           </span>
             <p>description</p>
-            {{input value=item.description type="text" class="input-container__item"}}
+            {{input value=formValues.description type="text" class="input-container__item"}}
           </div>
         </div>
         <div class="card__content--bottom admin">
