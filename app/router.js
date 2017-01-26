@@ -14,7 +14,7 @@ Router.map(function() {
       this.route('new-item', { path: '/:menu-category_id/new-item'});
       // this.route('edit-item');
     });
-      this.route('edit-item', { path: '/item/:menu-item_id/edit-item'});
+    this.route('edit-item', { path: '/item/:menu-item_id/edit-item'});
   });
 });
 

@@ -41,3 +41,13 @@
   display: flex;
   flex-direction: column;
 }
+
+.row-link {
+  display: flex;
+}
+.link {
+  text-decoration: none;
+  color: $c-warning;
+  padding: 0.5rem;
+
+}

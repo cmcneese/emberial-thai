@@ -184,3 +184,11 @@ $m-container: 70rem;
   width: 100%;
   padding: 1rem;
 }
+
+.button {
+  border: 0.1rem $c-success solid;
+  text-decoration: none;
+  background: $c-success;
+  color: $c-white;
+  padding: 1rem;
+}
