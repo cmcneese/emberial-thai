@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+button {
+  font: inherit;
+}
+
+input {
+  font: inherit;
+}
+
 body {
   margin: 0;
   background: $c-gray;

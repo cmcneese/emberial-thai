@@ -185,10 +185,13 @@ $m-container: 70rem;
   padding: 1rem;
 }
 
-.button {
-  border: 0.1rem $c-success solid;
-  text-decoration: none;
-  background: $c-success;
-  color: $c-white;
-  padding: 1rem;
+.row__title {
+  margin-top: 1rem;
 }
+// .button {
+//   border: 0.1rem $c-success solid;
+//   text-decoration: none;
+//   background: $c-success;
+//   color: $c-white;
+//   padding: 1rem;
+// }
