@@ -1,0 +1,19 @@
+<div class="grid">
+  <div class="grid__item">
+    <div class="card card--fullwidth">
+      <h2 class="card__header">New Category</h2>
+      {{#simple-form onsubmit=(action "saveForm") as |formValues|}}
+        <div class="card__content--top">
+          <p>Name</p>
+          {{input value=formValues.name}}
+        </div>
+        <div class="card__content--bottom admin">
+          {{#link-to "admin.category" class="button"}}
+            Back
+          {{/link-to}}
+          <button class="button is-success">Submit</button>
+        </div>
+        {{/simple-form}}
+    </div>
+  </div>
+</div>

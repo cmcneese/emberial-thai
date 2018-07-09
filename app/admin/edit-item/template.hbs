@@ -1,0 +1,25 @@
+{{outlet}}
+
+
+<div class="card card--fullwidth">
+  <h2 class="card__header">{{model.name}}</h2>
+  {{#simple-form onsubmit=(action "editItem") startingValues=model as |item|}}
+    <div class="card__content--top">
+      <div class="input-container">
+        <p>name</p>
+        {{input value=item.name type="text" class="input-container__item"}}
+        <p>price</p>
+        <span class="flex">
+                <i class="fa fa-usd"></i>
+                {{input value=item.price type="text" class="input-container__item"}}
+              </span>
+        <p>description</p>
+        {{input value=item.description type="text" class="input-container__item"}}
+      </div>
+    </div>
+    <div class="card__content--bottom admin">
+      {{#link-to "admin.category" class="button is-success" }}Back{{/link-to}}
+      <button class="button is-success">Submit</button>
+    </div>
+  {{/simple-form}}
+</div>

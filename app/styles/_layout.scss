@@ -1,0 +1,28 @@
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: flex;
+  margin: 0 (-$m-gutter);
+  flex-wrap: wrap;
+
+  &__item {
+    flex-basis: calc(50% - 1rem - 1rem);
+    margin: $m-gutter;
+    flex-grow: 1;
+
+    &--menu {
+      flex-basis: calc(75% - 1rem - 1rem);
+      // display: grid;
+
+    }
+
+    &--order {
+      flex-basis: calc(25% - 1rem - 1rem);
+
+    }
+  }
+}

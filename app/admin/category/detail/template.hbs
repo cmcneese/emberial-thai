@@ -1,0 +1,35 @@
+<h2 class="grid__title">{{ model.name }}</h2>
+<div class="grid">
+  <div class="grid__item">
+      <div class="card card--fullwidth">
+        <div class="row space-between">
+          <button class="button is-danger" {{action "destroyRecord" model}}>Delete</button>
+{{#link-to 'admin.category.new-item' model.id class="row__item"}}
+            New Menu Item
+          {{/link-to}}
+        </div>
+        <div class="table">
+          <div class="thead">
+            <p>Name</p>
+          </div>
+          <div class="tbody">
+            <tbody>
+              {{#each model.menuItems as |menuItem|}}
+              <div class="row row-table">
+                <p>{{menuItem.name}}</p>
+                {{!-- <p>{{menuItem.price}}</p>
+                <p>{{menuItem.description}}</p> --}}
+                <div class="row-link">
+                  {{#link-to 'admin.edit-item' menuItem class="link"}}
+                    Edit
+                  {{/link-to}}
+                  <a href="#" class="link" {{action "destroyRecord" menuItem}}>Delete</a>
+                </div>
+              </div>
+              {{/each}}
+            </tbody>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>

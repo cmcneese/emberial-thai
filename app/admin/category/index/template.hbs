@@ -1,0 +1,28 @@
+<h2 class="grid__title">Categories</h2>
+
+<div class="grid">
+  <div class="grid__item">
+    <div class="card card--fullwidth">
+      <div class="row">
+        {{#link-to 'admin.category.new' class="row__item" }}
+          Add New
+        {{/link-to}}
+      </div>
+      <div class="table">
+        <div class="thead">
+          <p>Name</p>
+        </div>
+        {{#each model as |category|}}
+          <div class="tbody">
+            <div class="row row-table">
+              <p>{{category.name}}</p>
+              {{#link-to 'admin.category.detail' category.id}}
+                Manage
+              {{/link-to}}
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
